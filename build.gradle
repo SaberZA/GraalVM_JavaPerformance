@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.3.0.M4'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'com.palantir.graal' version '0.6.0'
 }
 
 group = 'io.stevenv'
@@ -24,6 +25,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.springframework:spring-context-indexer'
 	implementation 'org.projectlombok:lombok'
+
+//	implementation 'com.palantir.graal:gradle-graal:0.6.0'
 
 	runtimeOnly 'io.r2dbc:r2dbc-h2'
 	runtimeOnly 'org.postgresql:postgresql'
